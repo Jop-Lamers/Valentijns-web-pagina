@@ -1,18 +1,35 @@
 body {
-  background-color: #fe3294;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e24f91;
 }
-#bottom {
-  background-color: #f1f1f1;
+.heart-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
 }
-#top {
-  background-color: #f1f1f1;
+.heart {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  position: absolute;
+  clip-path: path("M50 85 C-20 20 25 -10 50 20 C75 -10 120 20 50 85");
+  overflow: hidden;
 }
-#middle {
-  background-color: #f1f1f1;
+.heart-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  transition: height 1s ease-in-out;
 }
-#left {
-  background-color: #f1f1f1;
-}
-#right {
-  background-color: #f1f1f1;
+.percentage {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  top: 40%;
 }
