@@ -1,1 +1,9 @@
-background-color: #f224a7
+body {
+  background-color: #fe3294;
+}
+.header {
+  background-color: #f1f1f1;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
