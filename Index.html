@@ -27,23 +27,46 @@
 
     <script src="style.css"></script>
     <script>
-      document.getElementById("demo").innerHTML =
+      document.getElementById("demo").innerHTML = 
       Math.floor(Math.random() * 101);
       </script>
       
-    <h1>Love Meter</h1>
+      <style>
+        .big-button {
+          margin-bottom: 100px;
+          margin-right: -700px;
+          font-size: 50px;
+          padding: 10px 40px;
+
+        }
+  
+      </style>
+      
+       <h1>Love Meter</h1>
       <p id="demo"></p>
-      <button onclick="document.location.reload(true)">Generate</button>
+      <button class="big-button" onclick="document.location.reload(true)">Generate</button>
+      
+
+      
+
+
 
   
-  </body>
-
-  <p>play a sound:</p>
-
-  <audio controls>
-    <source src="horse.ogg" type="audio/ogg">
-    <source src="horse.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
+      <audio id="myAudio" controls>
+        <source src="careless-whisper.ogg" type="audio/ogg">
+        <source src="george-micael-wham-careless-whisper-1 (2).mp3" type="audio/mpeg">
+        Je browser ondersteunt het audio-element niet.
+    </audio>
+    
+    <button onclick="playAudio()">Afspelen</button>
+    
+    
+    <script>
+        function playAudio() { 
+            var audio = document.getElementById("myAudio");
+            if (audio) {
+                audio.play().catch(error => console.error("Kan audio niet afspelen:", error));
+            }
+        }
+    </script>
 </html>
