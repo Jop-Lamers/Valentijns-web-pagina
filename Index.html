@@ -7,66 +7,56 @@
     <link rel="stylesheet" type="text/css" href="/../style.css" />
   </head>
   <body>
-
     <div class="heart-container">
       <div class="heart">
-          <div class="heart-fill" id="heartFill"></div>
+        <div class="heart-fill" id="heartFill"></div>
       </div>
       <div class="percentage" id="percentageText">0%</div>
-  </div>
+    </div>
 
-  <script>
+    <script>
       function fillHeart() {
-          let randomPercentage = Math.floor(Math.random() * 101); // 0-100%
-          document.getElementById("heartFill").style.height = randomPercentage + "%";
-          document.getElementById("percentageText").textContent = randomPercentage + "%";
+        let randomPercentage = Math.floor(Math.random() * 101); // 0-100%
+        document.getElementById("heartFill").style.height =
+          randomPercentage + "%";
+        document.getElementById("percentageText").textContent =
+          randomPercentage + "%";
       }
 
       fillHeart(); // Roep de functie aan bij laden van de pagina
-  </script>
+    </script>
 
     <script src="style.css"></script>
     <script>
-      document.getElementById("demo").innerHTML = 
-      Math.floor(Math.random() * 101);
-      </script>
-      
-      <style>
-        .big-button {
-          margin-bottom: 100px;
-          margin-right: -700px;
-          font-size: 50px;
-          padding: 10px 40px;
-
-        }
-  
-      </style>
-      
-       <h1>Love Meter</h1>
-      <p id="demo"></p>
-      <button class="big-button" onclick="document.location.reload(true)">Generate</button>
-      
-
-      
-
-
-
-  
-      <audio id="myAudio" controls>
-        <source src="careless-whisper.ogg" type="audio/ogg">
-        <source src="george-micael-wham-careless-whisper-1 (2).mp3" type="audio/mpeg">
-        Je browser ondersteunt het audio-element niet.
-    </audio>
-    
-    <button onclick="playAudio()">Afspelen</button>
-    
-    
-    <script>
-        function playAudio() { 
-            var audio = document.getElementById("myAudio");
-            if (audio) {
-                audio.play().catch(error => console.error("Kan audio niet afspelen:", error));
-            }
-        }
+      document.getElementById("demo").innerHTML = Math.floor(
+        Math.random() * 101
+      );
     </script>
+
+    <h1>Love Meter</h1>
+    <p id="demo"></p>
+    <button onclick="document.location.reload(true)">Generate</button>
+  </body>
+
+  <p>play a sound:</p>
+
+  <audio>
+    <source src="horse.ogg" type="audio/ogg" />
+    <source src="horse.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <div class="area w-full h-screen absolute bg-gradient-to-l from-[#8f94fb] to-[#4e54c8] -z-10">
+    <ul class="circles relative w-full h-full overflow-hidden">
+      <li class="circle circle1"></li>
+      <li class="circle circle2"></li>
+      <li class="circle circle3"></li>
+      <li class="circle circle4"></li>
+      <li class="circle circle5"></li>
+      <li class="circle circle6"></li>
+      <li class="circle circle7"></li>
+      <li class="circle circle8"></li>
+      <li class="circle circle9"></li>
+      <li class="circle circle10"></li>
+    </ul>
+  </div>
 </html>
