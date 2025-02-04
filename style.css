@@ -176,6 +176,9 @@ body {
   left: 85%;
   animation-delay: 0s;
   animation-duration: 11s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Animation */
