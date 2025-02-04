@@ -6,18 +6,18 @@ body {
   background-color: #e24f91;
 }
 .heart-container {
-  margin-top: 150px;
+  margin-top: 0px;
   margin-left: 115px;
   position: relative;
   width: 800px;
   height: 800px;
 }
 .heart {
-  margin-top: 130px;
-  margin-left: 110px;
+  margin-top: 0px;
+  margin-left: 115px;
   width: 800px;
   height: 800px;
-  background-color: lightgray;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   clip-path: path(
     "M400 680 C-160 160 200 -80 400 160 C600 -80 960 160 400 680"
@@ -28,11 +28,11 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: rgb(255, 55, 55);
   transition: height 1s ease-in-out;
 }
 .percentage {
-  margin-top: 150px;
+  margin-top: 0x;
   margin-left: 115px;
   position: absolute;
   width: 100%;
@@ -40,4 +40,152 @@ body {
   font-size: 60px;
   font-weight: bold;
   top: 40%;
+}
+.area {
+  background: linear-gradient(to left, #e24f91, #d24e89);
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+/* Circles container */
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Common styles for circles */
+.circle {
+  position: absolute;
+  display: block;
+  list-style: none;
+  /* background: #ff4343; */
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: -150px;
+  animation: animate 25s linear infinite;
+  border-radius: 100%;
+}
+
+/* Circle sizes and positions */
+.circle1 {
+  width: 80px;
+  height: 80px;
+  left: 25%;
+  animation-delay: 0s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle2 {
+  width: 20px;
+  height: 20px;
+  left: 10%;
+  animation-delay: 2s;
+  animation-duration: 12s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle3 {
+  width: 20px;
+  height: 20px;
+  left: 70%;
+  animation-delay: 4s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle4 {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 0s;
+  animation-duration: 18s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle5 {
+  width: 20px;
+  height: 20px;
+  left: 65%;
+  animation-delay: 0s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle6 {
+  width: 110px;
+  height: 110px;
+  left: 75%;
+  animation-delay: 3s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle7 {
+  width: 150px;
+  height: 150px;
+  left: 35%;
+  animation-delay: 7s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle8 {
+  width: 25px;
+  height: 25px;
+  left: 50%;
+  animation-delay: 15s;
+  animation-duration: 45s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle9 {
+  width: 15px;
+  height: 15px;
+  left: 20%;
+  animation-delay: 2s;
+  animation-duration: 35s;
+  background-image: url(hartje_bg_removed.png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.circle10 {
+  width: 150px;
+  height: 150px;
+  left: 85%;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+/* Animation */
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(0deg);
+    opacity: 0;
+  }
 }
