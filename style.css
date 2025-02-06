@@ -3,18 +3,33 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #e24f91;
+  background-color: #ff6ba4;
+}
+
+#cupido {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 20px;
+  right: 15px;
+}
+#cupido2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 20px;
+  left: 15px;
 }
 .heart-container {
   margin-top: 0px;
-  margin-left: 115px;
+  margin-left: 90px;
   position: relative;
   width: 800px;
   height: 800px;
 }
 .heart {
   margin-top: 0px;
-  margin-left: 115px;
+  margin-left: 90px;
   width: 800px;
   height: 800px;
   background-color: rgb(255, 255, 255);
@@ -33,7 +48,7 @@ body {
 }
 .percentage {
   margin-top: 0x;
-  margin-left: 115px;
+  margin-left: 90px;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -42,7 +57,7 @@ body {
   top: 40%;
 }
 .area {
-  background: linear-gradient(to left, #e24f91, #d24e89);
+  background: linear-gradient(to left, #ff6ba4, #ff6ba4) 2;
   height: 100vh;
   position: fixed;
   z-index: -1;

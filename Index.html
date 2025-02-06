@@ -22,7 +22,7 @@
         document.getElementById("percentageText").textContent =
           randomPercentage + "%";
 
-        if (randomPercentage > 60) {
+        if (randomPercentage > 80) {
           playSound();
         }
       }
@@ -46,12 +46,29 @@
     <p id="demo"></p>
     <button onclick="fillHeart();">Generate</button>
 
-    <audio id="audio" controls>
+    <audio id="audio">
       <source
         src="sounds/george-micael-wham-careless-whisper-1.mp3"
         type="audio/mp3"
       />
     </audio>
+    <img src="cupido-Photoroom.png" id="cupido" />
+
+    <style>
+      img#cupido2 {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+
+      .big-button {
+        margin-top: -700;
+        margin-left: -270px;
+        font-size: 40px;
+        padding: 10px 40px;
+      }
+    </style>
+
+    <img src="cupido-Photoroom.png" id="cupido2" />
   </body>
   <div
     class="area w-full h-screen absolute bg-gradient-to-l from-[#8f94fb] to-[#4e54c8] -z-10"
@@ -69,4 +86,11 @@
       <li class="circle circle10"></li>
     </ul>
   </div>
+  <form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" /><br /><br />
+    <label for="lname">Second name:</label>
+    <input type="text" id="lname" name="lname" /><br /><br />
+    <input type="submit" value="Submit" />
+  </form>
 </html>
